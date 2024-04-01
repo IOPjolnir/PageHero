@@ -1,0 +1,8 @@
+{
+	"healtPoints": 5,
+	"minDamage": 1,
+	"maxDamage": 1,
+	"missChance": 0,
+	"maxHealthPoints": 5,
+	"lvl": 0
+}
