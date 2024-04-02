@@ -3,6 +3,7 @@
 	--bg-color: #FFFFFF;
 	--font-color: #000000;
 	--border-color: #000000;
+	--path-color: #DDDDDD;
 	--border-size: 2px;
 }
 
@@ -41,7 +42,13 @@ body {
 
 /* ---=====MAIN=====--- */
 .main {
+	padding: 30px 6px; 
+	display: flex;
+	justify-content: center;
+}
 
+#game-map {
+	position: relative;
 }
 
 .path {
@@ -50,10 +57,37 @@ body {
 .path#outer {
 	height: 100%;
 	box-sizing: content-box;
+	background: var(--path-color);
+
 	position: relative;
 }
 .path#inner {
 	box-sizing: border-box;
+	background: var(--bg-color);
 
 	position: absolute;
+}
+
+.hero {
+	background: green;
+	position: absolute;
+}
+
+#mark-start {
+	background: var(--font-color);
+	position: absolute;
+}
+
+.sidebar {
+	margin-left: 30px;
+	padding: 20px 30px;
+	border: var(--border-size) solid var(--border-color);
+
+	width: 500px;
+
+	.title {
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+	}
 }
