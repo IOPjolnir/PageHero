@@ -26,6 +26,10 @@ body {
 	background: var(--bg-color);
 }
 
+.-positioned {
+	position: absolute;
+}
+
 
 /* ---=====HEADER=====--- */
 .header {
@@ -64,18 +68,15 @@ body {
 .path#inner {
 	box-sizing: border-box;
 	background: var(--bg-color);
-
-	position: absolute;
 }
 
 .hero {
 	background: green;
-	position: absolute;
+	transition: left 200ms, top 200ms;
 }
 
 #mark-start {
 	background: var(--font-color);
-	position: absolute;
 }
 
 .sidebar {
